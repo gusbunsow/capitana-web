@@ -1,0 +1,576 @@
+
+<html lang="en">
+  <head>
+    <title>Visit www.pixelrocket.store to learn how to become a frontend web developer</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
+  </head>
+  <body class="antialiased bg-body text-body font-body">
+    <div>
+        <section class="relative bg-teal-900" x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" src="fauna-assets/headers/bg-waves.png" alt=""/>
+          <nav class="py-6">
+            <div class="container mx-auto px-4">
+              <div class="relative flex items-center justify-between"><a class="inline-block" href="#!"><img class="h-8" src="images/logo-white.svg" alt=""/></a>
+                <ul class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex">
+                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="about.html">Nosotros</a></li>
+                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#servicios">Servicios</a></li>
+                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#testimonios">Testimonios</a></li>
+                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#Preguntas">Preguntas frecuentes</a></li>
+                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="">Contacto</a></li>
+                </ul>
+                <div class="flex items-center justify-end">
+                  <div class="hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200" href=""><span class="mr-2">Agendá un encuentro</span>
+                    <span class="transform group-hover:translate-x-0.5 transition-transform duration-200">
+                        <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.75 10H15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          <path d="M10 4.75L15.25 10L10 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></span></a></div>
+                  <button class="md:hidden text-white hover:text-lime-500" x-on:click="mobileNavOpen = !mobileNavOpen">
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19995 23.2H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5.19995 16H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M5.19995 8.79999H26.7999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="relative pt-18 pb-24 sm:pb-32 lg:pt-36 lg:pb-62">
+            <div class="w-full text-center">
+              <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight text-white mb-8">Consultora estratégica en identidad<br>y transformación digital.</h1>
+                <p class="max-w-md xl:max-w-none text-lg text-white opacity-80 mb-10">Cuando una organización evoluciona, crece o simplemente cambia, su estrategia de comunicación también.<br>En un entorno digital saturado, no gana el que más ruido hace, sino el que tiene más claridad y conexión.
+                  <br>Ayudamos a alinear lo que son con lo que hacen, dicen y muestran.</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a>
+              </div>
+            </div>
+          </div>
+          <div class="hidden fixed top-0 left-0 bottom-0 w-full xs:w-5/6 xs:max-w-md z-50" :class="{'block': mobileNavOpen, 'hidden': !mobileNavOpen}">
+            <div class="fixed inset-0 bg-violet-900 opacity-20" x-on:click="mobileNavOpen = !mobileNavOpen"></div>
+            <nav class="relative flex flex-col py-7 px-10 w-full h-full bg-white overflow-y-auto">
+              <div class="flex items-center justify-between"><a class="inline-block" href="#!"><img class="h-8" src="fauna-assets/logos/sign-logo-flow.svg" alt=""/></a>
+                <div class="flex items-center"><a class="inline-flex py-2.5 px-4 mr-6 items-center justify-center text-sm font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="#!">Login</a>
+                  <button x-on:click="mobileNavOpen = !mobileNavOpen">
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M23.2 8.79999L8.80005 23.2M8.80005 8.79999L23.2 23.2" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="pt-20 pb-12 mb-auto">
+                <ul class="flex-col">
+                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="about.html">About us</a></li>
+                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="pricing.html">Pricing</a></li>
+                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="">Contact us</a></li>
+                  <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="blog.html">Blog</a></li>
+                </ul>
+              </div>
+              <div class="flex items-center justify-between"><a class="inline-flex items-center text-lg font-medium text-teal-900" href="#!"><span>
+                    <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.4 6.39999H25.6C26.92 6.39999 28 7.47999 28 8.79999V23.2C28 24.52 26.92 25.6 25.6 25.6H6.4C5.08 25.6 4 24.52 4 23.2V8.79999C4 7.47999 5.08 6.39999 6.4 6.39999Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M28 8.8L16 17.2L4 8.8" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></span>                  <span class="ml-2">Newsletter</span></a>
+                <div class="flex items-center"><a class="inline-block mr-4" href="#!">
+                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_282_7847)">
+                        <path d="M11.548 19.9999V10.8776H14.6087L15.0679 7.32146H11.548V5.05136C11.548 4.02209 11.8326 3.32066 13.3103 3.32066L15.1918 3.31988V0.139123C14.8664 0.0968385 13.7495 -0.000106812 12.4495 -0.000106812C9.73488 -0.000106812 7.87642 1.65686 7.87642 4.69916V7.32146H4.8064V10.8776H7.87642V19.9999H11.548Z" fill="#022C22"></path>
+                      </g>
+                    </svg></a>                  <a class="inline-block mr-4" href="#!">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="currentColor"></path>
+                    </svg></a>                  <a class="inline-block" href="#!">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"></path>
+                    </svg></a></div>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+<!--SECCION FRASE SOBRE BLANCO-->
+<section class="py-12 lg:py-24">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap -mx-4">
+      <!-- Cambié las clases de ancho por w-full + mx-auto + text-center -->
+      <div class="w-full px-4 mx-auto text-center">
+        <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-4">Sin fórmulas, porque cada organización posee un ADN único y su estrategia debe ser pensada desde esa individualidad.</h5>
+        <span class="text-base lg:text-lg text-gray-700 block">No somos una agencia. Somos una consultora estratégica que interviene cuando necesitás alinear tu identidad. Intervenimos en el punto donde se cruzan la estrategia, la comunicación y lo institucional.
+        No trabajamos en respuestas prefabricadas: escuchamos, pensamos y diseñamos a la par, para ordenar, proyectar y hacer visible lo que ya está latente.</span>
+      </div>
+    </div>
+  </div>
+</section>
+      
+<!--SECCION SERVICIOS-->
+<section id="servicios" class="p-4 bg-white text-white">
+  <div class="pt-16 pb-24 px-5 xs:px-8 xl:px-12 bg-lime-500 rounded-3xl">
+    <div class="container mx-auto px-4">
+      <h1 class="font-heading text-4xl sm:text-6xl mb-24">Servicios</h1>
+      <div class="flex flex-wrap -mx-4">
+        
+        <!-- ADN -->
+        <div class="w-full sm:w-1/2 px-4 mb-16">
+          <div>
+            <img src="fauna-assets/svg/adn.svg" alt="ADN" class="w-12 h-12 mb-4">
+            <div class="mt-6">
+              <h5 class="text-2xl font-medium mb-3">ADN</h5>
+              <p class="mb-6">DIAGNÓSTICO ESTRATÉGICO + HOJA DE RUTA<br>Para organizaciones que sienten desorden o estancamiento y necesitan identificar sus bloqueos comunicacionales y ordenar prioridades antes de avanzar.</p>
+              <a class="inline-block text-lg font-medium hover:text-teal-700" href="#!"></a>
+              <p><strong>INCLUYE</strong></p>
+              <ul style="list-style-type: disc;">
+                <li>Auditoría de canales, narrativa e identidad institucional.</li>
+                <li>Entrevistas clave y análisis de públicos.</li>
+                <li>Reporte de hallazgos + hoja de ruta estratégica.</li>
+              </ul>
+              <p><br>Entregables: Informe de diagnóstico y hoja de ruta priorizada.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROADMAP -->
+        <div class="w-full sm:w-1/2 px-4 mb-16">
+          <div>
+            <img src="fauna-assets/svg/roadmap.svg" alt="ROADMAP" class="w-12 h-12 mb-4">
+            <div class="mt-6">
+              <h5 class="text-2xl font-medium mb-3">ROADMAP</h5>
+              <p class="mb-6">IDENTIDAD INSTITUCIONAL + ESTRATEGIA DE COMUNICACIÓN<br>
+                Para organizaciones que necesitan crear o repensar su posicionamiento, clarificar su voz institucional y proyectar una identidad profesional y sostenible.
+              </p>
+              <a class="inline-block text-lg font-medium hover:text-teal-700" href="#!"></a>
+              <p><strong>INCLUYE</strong></p>
+              <ul style="list-style-type: disc;">
+                <li>Diseño de propuesta de valor (Propósito, personalidad y tono de marca)</li>
+                <li>Arquitectura de mensajes, públicos y canales (web, redes, mailings, etc.)</li>
+                <li>Plan de trabajo y definición de métricas.</li>
+              </ul>
+              <p><br>Entregables: Manual de identidad institucional y plan de ejecución estratégico a corto, mediano y largo plazo.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACTIVACIÓN -->
+        <div class="w-full sm:w-1/2 px-4 mb-16 sm:mb-0">
+          <div>
+            <img src="fauna-assets/svg/activa.svg" alt="ACTIVACIÓN" class="w-12 h-12 mb-4">
+            <div class="mt-6">
+              <h5 class="text-2xl font-medium mb-3">ACTIVACIÓN</h5>
+              <p class="mb-6">IMPLEMENTACIÓN SUPERVISADA<br>
+                Para quienes necesitan supervisión en la puesta en marcha: validación de entregables, coordinación con proveedores y cumplimiento de calidad, tiempos y objetivos del lanzamiento.
+              </p>
+              <a class="inline-block text-lg font-medium hover:text-teal-700" href="#!"></a>
+              <p><strong>INCLUYE</strong></p>
+              <ul style="list-style-type: disc;">
+                <li>Revisión y validación de piezas comunicacionales.</li>
+                <li>Supervisión de diseño, web, redes o campañas.</li>
+                <li>Interacción con equipos internos y externos.</li>
+                <li>Reportes de avances y sugerencias de mejora.</li>
+              </ul>
+              <p><br>Opcional: Búsqueda y selección de proveedores.</p>
+              <p><br>Entregables: Reporte de métricas por etapa y propuesta de mejoras en base a resultados.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRACTIONAL CMO -->
+        <div class="w-full sm:w-1/2 px-4">
+          <div>
+            <img src="fauna-assets/svg/fractional.svg" alt="FRACTIONAL CMO" class="w-12 h-12 mb-4">
+            <div class="mt-6">
+              <h5 class="text-2xl font-medium mb-3">FRACTIONAL CMO</h5>
+              <p class="mb-6">DIRECCIÓN DE MARKETING EXTERNA<br>
+                Servicio exclusivo para organizaciones que buscan continuidad estratégica sin los costos fijos de una dirección interna. 
+                Asumimos, por un año, el liderazgo del área de marketing y comunicación, definimos objetivos trimestrales (OKRs) y coordinamos a todos los proveedores externos e internos.
+              </p>
+              <a class="inline-block text-lg font-medium hover:text-teal-700" href="#!"></a>
+              <p><strong>INCLUYE</strong></p>
+              <ul style="list-style-type: disc;">
+                <li>Participación activa en reuniones de dirección.</li>
+                <li>Planificación y seguimiento trimestral.</li>
+                <li>Definición de OKRs y rutinas operativas.</li>
+                <li>Supervisión global del área.</li>
+              </ul>
+              <p><br>Entregables: Dirección general del área, reportes de gestión y optimización constante.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 lg:py-24 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <div class="w-full text-center">
+      <!-- Frase principal (similar al h5 de la sección blanca) -->
+      <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-6">
+        Todos nuestros servicios están pensados con escalabilidad inteligente: si empezás con un diagnóstico y decidís avanzar, solo abonás la diferencia. Tu inversión construye sobre lo ya trabajado.
+      </h5>
+      <!-- Bajada (similar al span de la sección blanca) -->
+      <p class="text-base lg:text-lg text-gray-700 mb-10">
+        No ofrecemos soluciones genéricas. Creamos estrategias con sentido, desde el contexto real de cada organización.
+      </p>
+      <!-- Botón (igual al que tenías, pero más proporcionado) -->
+      <a class="inline-flex py-3 px-6 items-center justify-center text-base font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200" href="#!">Contactános</a>
+    </div>
+  </div>
+</section>
+          <div class="flex justify-center">
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
+            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
+            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
+          </div>
+        </div>
+      </section>
+      <!--PREGUNTAS FRECUENTES-->
+      <section id="Preguntas" class="py-12 lg:py-24">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-20">
+            <h1 class="font-heading text-6xl mb-6">Preguntas frecuentes</h1>
+          </div>
+          <div class="max-w-4xl mx-auto">
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Capitana es una agencia de diseño o marketing?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">No. Somos una consultora estratégica. Nuestra labor es anterior y distinta a la ejecución: diagnosticamos, planificamos y dirigimos. Podemos supervisar el diseño y coordinar proveedores, pero nuestro entregable principal es el orden, la estrategia y la dirección, no la pieza gráfica final aislada.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Por qué recomiendan empezar por el Diagnóstico ("ADN")?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Porque la prescripción sin diagnóstico estaría vacía.  Para trazar una ruta que funcione, necesitamos entender profundamente tu realidad, tus recursos y tus bloqueos. Intentar comunicar sin esa base suele llevar a gastar presupuesto en acciones que no traen resultados.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Qué significa "Fractional CMO"?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Significa tener Directores de Marketing senior trabajando para tu empresa de forma part-time. Participamos en tus reuniones de decisión y lideramos el área, brindando una visión experta y continuidad, pero con un esquema de costos mucho más eficiente que una contratación full-time de ese nivel.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Capitana gestiona redes sociales?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">No. Capitana no gestiona redes ni produce contenido operativo de forma recurrente. Diseña la estrategia institucional y comunicacional que luego puede ser implementada por equipos internos o proveedores externos.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Puedo contratar solo una parte del servicio?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Sí. Todos los paquetes son independientes entre sí. Sin embargo, recomendamos comenzar por el diagnóstico, ya que sin ese insumo se compromete la profundidad y la efectividad del trabajo posterior.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Capitana trabaja con cualquier tipo de organización?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Capitana trabaja con organizaciones que valoran el criterio, la coherencia institucional y el enfoque estratégico. No importa el rubro ni el tamaño, pero sí importa el momento y el compromiso de quienes lideran el proceso.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-4 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Capitana trabaja en todo el país o solo en Buenos Aires?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Capitana trabaja de forma remota y presencial, según el tipo de proceso. Acompañamos organizaciones de todo el país y también en el exterior, adaptando la modalidad a cada caso.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <button class="flex w-full py-6 px-8 mb-24 items-start justify-between text-left shadow-md rounded-2xl" x-data="{ accordion: false }" x-on:click.prevent="accordion = !accordion">
+              <div>
+                <div class="pr-5">
+                  <h5 class="text-lg font-medium">¿Capitana puede reemplazar un área de comunicación interna?</h5>
+                </div>
+                <div class="overflow-hidden h-0 pr-5 duration-500" x-ref="container" :style="accordion ? 'height: ' + $refs.container.scrollHeight + 'px' : ''">
+                  <p class="text-gray-700 mt-4">Capitana no reemplaza equipos, los fortalece. En procesos más largos, puede asumir la conducción externa del área de comunicación a través del modelo Fractional CMO. Esto permite contar con dirección estratégica sin incorporar estructura interna.</p>
+                </div>
+              </div><span class="flex-shrink-0">
+                <div :class="{'hidden': accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5.69995V18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div class="hidden" :class="{'hidden': !accordion}">
+                  <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.69995 12H18.3" stroke="#1D1F1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div></span>
+            </button>
+            <div class="sm:flex py-10 px-5 sm:px-10 bg-orange-50 rounded-2xl">
+              <div class="mb-4 sm:mb-0 sm:mr-6">
+               <!-- <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
+                  <path d="M13.676 15.5617C11.7951 17.8602 10.6666 20.7983 10.6666 24C10.6666 27.2017 11.7951 30.1398 13.6761 32.4383L18.9201 27.1943C18.3372 26.2694 18 25.174 18 24C18 22.8259 18.3372 21.7306 18.92 20.8057L13.676 15.5617Z" fill="#022C22"></path>
+                  <path d="M15.5616 13.6761L20.8056 18.9201C21.7306 18.3372 22.8259 18 24 18C25.174 18 26.2694 18.3372 27.1943 18.9201L32.4383 13.6761C30.1398 11.7951 27.2017 10.6666 24 10.6666C20.7982 10.6666 17.8601 11.7951 15.5616 13.6761Z" fill="#022C22"></path>
+                  <path d="M34.3239 15.5617L29.0799 20.8057C29.6628 21.7307 30 22.8259 30 24C30 25.174 29.6627 26.2693 29.0799 27.1943L34.3238 32.4383C36.2048 30.1398 37.3333 27.2017 37.3333 24C37.3333 20.7983 36.2048 17.8602 34.3239 15.5617Z" fill="#022C22"></path>
+                  <path d="M32.4382 34.3239L27.1942 29.0799C26.2693 29.6628 25.174 30 24 30C22.8259 30 21.7307 29.6628 20.8057 29.0799L15.5617 34.3239C17.8602 36.2048 20.7983 37.3333 24 37.3333C27.2016 37.3333 30.1397 36.2048 32.4382 34.3239Z" fill="#022C22"></path>
+                </svg>-->
+              </div>
+              <div>
+                <h5 class="text-xl font-medium mb-4">¿Tenés dudas sobre qué etapa es la adecuada para tu organización?</h5>
+                <p class="text-gray-700"><span>Escribínos a</span>
+                  <a class="inline-block text-black font-medium underline" href="info@capitanamarketing.com">info@capitanamarketing.com</a>
+                  <span>o envíanos un mensaje vía whatsapp<br> a</span>
+                  <span class="text-black font-medium">(671) 555-0110</span>
+                  <span>te contestaremos a la brevedad para resolver tus dudas</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TESTIMONIOS-->
+<section id="testimonios" class="py-12 lg:py-24 overflow-hidden" x-data="{ activeSlide: 1, slideCount: 4 }">
+  <div class="container mx-auto px-4">
+    <!-- Contenedor principal de dos columnas -->
+    <div class="flex flex-wrap items-start -mx-4">
+      
+<!-- Columna izquierda: texto -->
+<div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0 self-start">
+  <h1 class="font-heading text-4xl sm:text-6xl md:text-7xl tracking-sm mb-6">Testimonios</h1>
+  <p class="text-lg text-gray-700">Acompañamos procesos complejos que requieren sensibilidad, criterio y mirada estratégica. Estas voces reflejan parte del impacto generado, sin exponer a las organizaciones.</p>
+</div>
+      
+      <!-- Columna derecha: carrusel de testimonios -->
+      <div class="w-full lg:w-1/2 px-4">
+        <div class="max-w-lg mx-auto lg:mr-0 overflow-hidden">
+          <div class="flex -mx-4 transition-transform duration-500" :style="'transform: translateX(-' + (activeSlide - 1) * 100 + '%)'">
+            <!-- Testimonio 1 -->
+            <div class="flex-shrink-0 px-4 w-full">
+              <h4 class="text-3xl lg:text-4xl font-medium mb-10">"Sentíamos que habíamos perdido el hilo de nuestra propia historia. Capitana no solo ordenó nuestra comunicación, nos ayudó a recuperar el entusiasmo y la coherencia interna."</h4>
+              <span class="block text-xl font-medium">Directora Ejecutiva</span>
+              <span class="block mb-12 lg:mb-32 text-lg text-gray-700">Fundación Educativa</span>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="flex-shrink-0 px-4 w-full">
+              <h4 class="text-3xl lg:text-4xl font-medium mb-10">"Buscábamos una agencia que hiciera cosas 'lindas', pero Capitana nos mostró que primero necesitábamos una estrategia sólida. Ese cambio de enfoque nos ahorró meses de trabajo inútil."</h4>
+              <span class="block text-xl font-medium">Socio Fundador</span>
+              <span class="block mb-12 lg:mb-32 text-lg text-gray-700">Empresa B2B</span>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="flex-shrink-0 px-4 w-full">
+              <h4 class="text-3xl lg:text-4xl font-medium mb-10">"Lo que más valoro es la 'sensibilidad estratégica'. Entendieron nuestros tiempos y tensiones internas sin juzgar, y nos dieron herramientas reales para destrabar procesos que llevaban años frenados."</h4>
+              <span class="block text-xl font-medium">Gerente General</span>
+              <span class="block mb-12 lg:mb-32 text-lg text-gray-700">Institución de Salud</span>
+            </div>
+            <!-- Testimonio 4 -->
+            <div class="flex-shrink-0 px-4 w-full">
+              <h4 class="text-3xl lg:text-4xl font-medium mb-10">"Tener a Capitana como Dirección Externa (Fractional CMO) nos dio el seniority que necesitábamos sin inflar la estructura. Es un alivio saber que alguien está cuidando la marca con tanto criterio."</h4>
+              <span class="block text-xl font-medium">CEO</span>
+              <span class="block mb-12 lg:mb-32 text-lg text-gray-700">Startup en expansión</span>
+            </div>
+          </div>
+          <!-- Botones de navegación -->
+          <div>
+            <button class="inline-block mr-4 text-gray-700 hover:text-lime-500" x-on:click="activeSlide = activeSlide > 1 ? activeSlide - 1 : slideCount">
+              <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.4 16H7.59998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16 24.4L7.59998 16L16 7.59998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="inline-block text-gray-700 hover:text-lime-500" x-on:click="activeSlide = activeSlide < slideCount ? activeSlide + 1 : 1">
+              <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.59998 16H24.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16 7.59998L24.4 16L16 24.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!--fin testimonios-->
+
+<!--PREFOOTER-->
+          <section> 
+            <div class="p-4">
+              <div class="max-w-xl lg:max-w-5xl mx-auto xl:max-w-none px-5 md:px-12 xl:px-24 py-16 bg-teal-900 rounded-2xl">
+                <div class="container mx-auto px-4">
+                  <div class="flex flex-wrap items-center -mx-4">
+                    <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
+                      <div class="max-w-md xl:max-w-none">
+                        <h1 class="font-heading text-4xl xs:text-5xl sm:text-6xl tracking-sm text-white mb-6">Claridad para decidir. Criterio para priorizar. Confianza para avanzar.</h1>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-1/3 px-4 lg:text-right"><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="relative py-12 lg:py-24 bg-orange-50 overflow-hidden"><img class="absolute bottom-0 left-0" src="fauna-assets/footer/waves-lines-left-bottom.png" alt=""/>
+        <div class="container px-4 mx-auto relative">
+          <div class="flex flex-wrap mb-16 -mx-4">
+            <div class="w-full lg:w-2/12 xl:w-2/12 px-4 mb-16 lg:mb-0"><a class="inline-block mb-4" href="#!"><img src="images/logocap.svg" alt=""/></a></div>
+            <div class="w-full md:w-7/12 lg:w-6/12 px-4 mb-16 lg:mb-0">
+              <div class="flex flex-wrap -mx-4">
+                <!--<div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
+                  <h3 class="mb-6 font-bold">Platform</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Solutions</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">How it works</a></li>
+                    <li><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Pricing</a></li>
+                  </ul>
+                </div>-->
+                <div class="w-1/2 xs:w-1/3 px-4 mb-8 xs:mb-0">
+                  <h3 class="mb-6 font-bold">Mapa de sitio</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Nosotros</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Servicios</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Testimonios</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Preguntas frecuentes</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="info@capitanamarketing.com">Contacto</a></li>
+                  </ul>
+                </div>
+                <div class="w-full xs:w-1/3 px-4">
+                  <h3 class="mb-6 font-bold">Legales</h3>
+                  <ul>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Política de privacidad</a></li>
+                    <li class="mb-4"><a class="inline-block text-gray-600 hover:text-lime-500 font-medium" href="#!">Términos de uso</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-5/12 lg:w-4/12 px-4">
+              <div class="max-w-sm p-8 bg-teal-900 rounded-2xl mx-auto md:mr-0">
+                <h5 class="text-xl font-medium text-white mb-4">¿Querés saber si Capitana es lo que tu organización necesita?</h5>
+                <p class="text-sm text-white opacity-80 leading-normal mb-10">Antes de ofrecer respuestas, escuchamos. Agendá una entrevista inicial sin cargo para conversar sobre tu contexto, tus desafíos y tus prioridades.</p>
+                <div class="flex flex-col">
+                  <input class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" placeholder="e-mail..."/><a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Enviar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -mb-3 justify-between">
+            <div class="flex items-center mb-3">
+              <!--<a class="inline-block mr-4 text-black hover:text-lime-500" href="#!">
+                <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_230_4832)">
+                    <path d="M11.5481 19.9999V10.8776H14.6088L15.068 7.32147H11.5481V5.05138C11.5481 4.02211 11.8327 3.32067 13.3104 3.32067L15.1919 3.3199V0.139138C14.8665 0.0968538 13.7496 -9.15527e-05 12.4496 -9.15527e-05C9.735 -9.15527e-05 7.87654 1.65687 7.87654 4.69918V7.32147H4.80652V10.8776H7.87654V19.9999H11.5481Z" fill="currentColor"></path>
+                  </g>
+                </svg></a><a class="inline-block mr-4 text-black hover:text-lime-500" href="#!">-->
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="currentColor"></path>
+                </svg></a>              <a class="inline-block text-black hover:text-lime-500" href="#!">
+                <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 3C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19ZM18.5 18.5V13.2C18.5 12.3354 18.1565 11.5062 17.5452 10.8948C16.9338 10.2835 16.1046 9.94 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17C14.6813 12.17 15.0374 12.3175 15.2999 12.5801C15.5625 12.8426 15.71 13.1987 15.71 13.57V18.5H18.5ZM6.88 8.56C7.32556 8.56 7.75288 8.383 8.06794 8.06794C8.383 7.75288 8.56 7.32556 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19C6.43178 5.19 6.00193 5.36805 5.68499 5.68499C5.36805 6.00193 5.19 6.43178 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56ZM8.27 18.5V10.13H5.5V18.5H8.27Z" fill="currentColor"></path>
+                </svg></a></div>
+            <div class="text-center">Capitana Marketing | Consultora estratégica en identidad y transformación digital | 2026<a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
