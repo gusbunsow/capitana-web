@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada | Pilar Norte Departamentos</title>
+    <meta name="robots" content="noindex, follow">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', 'Segoe UI', Roboto, sans-serif;
+            background: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Logo o icono opcional (puedes poner tu logo aquí) */
+        .error-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            color: #5D802D; /* Verde Oklisto / Pilar Norte */
+        }
+
+        h1 {
+            font-size: 8rem;
+            font-weight: 800;
+            color: #5D802D;
+            line-height: 1;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1F1F1F;
+            margin-bottom: 1rem;
+        }
+
+        .message {
+            font-size: 1.2rem;
+            color: #4D4D4D;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 0; /* bordes rectos como el diseño */
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: #5D802D;
+            color: #fff;
+            border: 1px solid #5D802D;
+        }
+
+        .btn-primary:hover {
+            background: #fff;
+            color: #5D802D;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #5D802D;
+            border: 1px solid #5D802D;
+        }
+
+        .btn-secondary:hover {
+            background: #5D802D;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 5rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .message {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Pequeño detalle para que el footer no quede pegado si hay poco contenido */
+        .footer-note {
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            color: #aaa;
+        }
+        .footer-note a {
+            color: #5D802D;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Icono opcional (puedes cambiarlo por un emoji o un SVG) -->
+        <div class="error-icon">🔍</div>
+        <h1>404</h1>
+        <h2>Parece que hay un problema</h2>
+        <div class="message">
+            La página que buscás no se encuentra disponible o fue movida a otra dirección.
+        </div>
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">← Volver al inicio</a>
+            <a href="mailto:oklisto.gus@gmail.com?subject=Reporte%20de%20página%20no%20encontrada&body=Hola,%20encontré%20un%20error%20404%20en%20la%20siguiente%20URL:%20[pegar%20aquí%20la%20dirección%20que%20intenté%20acceder]" class="btn btn-secondary">📧 Reportar al desarrollador</a>
+        </div>
+        <div class="footer-note">
+            ¿Necesitás ayuda? Escribinos a <a href="mailto:oklisto.gus@gmail.com">oklisto.gus@gmail.com</a>
+        </div>
+    </div>
+</body>
+</html>

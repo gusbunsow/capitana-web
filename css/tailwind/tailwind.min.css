@@ -1645,3 +1645,6 @@ video {
         line-height: .95
     }
 }
+.rounded-6px {
+  border-radius: 6px;
+}

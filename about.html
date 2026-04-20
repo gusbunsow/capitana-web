@@ -1,15 +1,53 @@
 
-<html lang="en">
-  <head>
-    <title>Visit www.pixelrocket.store to learn how to become a frontend web developer</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
-  </head>
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- SEO Básico -->
+  <title>Capitana Marketing | Consultora</title>
+  <meta name="description" content="Capitana Marketing es una consultora estratégica en identidad y transformación digital. Acompañamos procesos complejos con sensibilidad, criterio y mirada estratégica." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Capitana Marketing" />
+  <meta name="language" content="Spanish" />
+  <meta name="geo.region" content="AR" />
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Capitana Marketing | Consultora de Marketing" />
+  <meta property="og:description" content="Sin fórmulas. Diseñamos estrategias con sentido desde el ADN único de cada organización." />
+  <meta property="og:image" content="https://capitana.com/social-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://capitana.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Capitana Marketing | Consultora de Marketing" />
+  <meta name="twitter:description" content="Sin fórmulas. Diseñamos estrategias con sentido desde el ADN único de cada organización." />
+  <meta name="twitter:image" content="https://capitana.com/social-preview.jpg" />
+
+  <!-- Favicon (lo tenías) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+
+  <!-- Tus recursos originales (Tailwind, Google Fonts, Alpine) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+
+  <!-- Google Analytics (reemplazá G-XXXXXXXX por tu ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXX');
+  </script>
+</head>
+<body>
   <body class="antialiased bg-body text-body font-body">
     <div>
         <section class="overflow-hidden" x-data="{ mobileNavOpen: false }">
@@ -21,11 +59,10 @@
                   <li class="mr-8"><a class="inline-block text-black hover:text-lime-500 font-medium" href="#servicios">Servicios</a></li>
                   <li class="mr-8"><a class="inline-block text-black hover:text-lime-500 font-medium" href="#testimonios">Testimonios</a></li>
                   <li class="mr-8"><a class="inline-block text-black hover:text-lime-500 font-medium" href="#Preguntas">Preguntas frecuentes</a></li>
-                  <li class="mr-8"><a class="inline-block text-black hover:text-lime-500 font-medium" href="">Contacto</a></li>
                 </ul>
                 <div class="flex items-center justify-end">
                   <div class="hidden md:block">
-                    <div class="hidden md:block"><a class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white border border-teal-900 hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200" href="">Contactános</a></div>
+                    <div class="hidden md:block"><a class="inline-flex py-2.5 px-4 items-center justify-center text-sm font-medium text-white hover:border-black bg-teal-900 hover:bg-black rounded-full transition duration-200" href="">Contactános</a></div>
                   </div>
                   <button class="md:hidden text-teal-900 hover:text-teal-800" x-on:click="mobileNavOpen = !mobileNavOpen">
                     <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,14 +87,7 @@
                   </button>
                 </div>
               </div>
-              <div class="pt-20 pb-12 mb-auto">
-                <ul class="flex-col">
-                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="about.html">About us</a></li>
-                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="pricing.html">Pricing</a></li>
-                  <li class="mb-6"><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="">Contact us</a></li>
-                  <li><a class="inline-block text-teal-900 hover:text-teal-700 font-medium" href="blog.html">Blog</a></li>
-                </ul>
-              </div>
+
               <div class="flex items-center justify-between"><a class="inline-flex items-center text-lg font-medium text-teal-900" href="#!"><span>
                     <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M6.4 6.39999H25.6C26.92 6.39999 28 7.47999 28 8.79999V23.2C28 24.52 26.92 25.6 25.6 25.6H6.4C5.08 25.6 4 24.52 4 23.2V8.79999C4 7.47999 5.08 6.39999 6.4 6.39999Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -80,15 +110,16 @@
           </div>
         </section>
       </div>
-      <section class="relative py-12 lg:py-24 overflow-hidden"><img class="absolute bottom-0 left-0" src="fauna-assets/about/lines.svg" alt=""/>
+      <section class="relative py-12 lg:py-24 overflow-hidden">
         <div class="container mx-auto px-4 relative">
           <div class="max-w-4xl mx-auto text-center">
             <h1 class="font-heading text-5xl sm:text-6xl mb-8">¿Quiénes somos?</h1>
             <p class="text-2xl text-black font-medium mb-10">Somos una consultora de marketing y comunicación especializada en alineación estratégica de procesos internos y externos.
-Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde adentro lo que necesitan proyectar hacia afuera.
-</p><!--<a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 hover:text-white border border-teal-900 hover:bg-teal-900 rounded-full transition duration-200" href="#!"></a>-->
-          </div>
+            Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde adentro lo que necesitan proyectar hacia afuera.</p>
+            </div>
         </div>
+      </section>
+
             <!--PREGUNTAS FRECUENTES-->
       <section class="py-12 lg:py-24">
         <div class="container mx-auto px-4">
@@ -185,48 +216,14 @@ Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde a
             </button>
             <div class="sm:flex py-10 px-5 sm:px-10 bg-orange-50 rounded-2xl">
               <div class="mb-4 sm:mb-0 sm:mr-6">
-               <!-- <svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 8C0 3.58172 3.58172 0 8 0H40C44.4183 0 48 3.58172 48 8V40C48 44.4183 44.4183 48 40 48H8C3.58172 48 0 44.4183 0 40V8Z" fill="#BEF264"></path>
-                  <path d="M13.676 15.5617C11.7951 17.8602 10.6666 20.7983 10.6666 24C10.6666 27.2017 11.7951 30.1398 13.6761 32.4383L18.9201 27.1943C18.3372 26.2694 18 25.174 18 24C18 22.8259 18.3372 21.7306 18.92 20.8057L13.676 15.5617Z" fill="#022C22"></path>
-                  <path d="M15.5616 13.6761L20.8056 18.9201C21.7306 18.3372 22.8259 18 24 18C25.174 18 26.2694 18.3372 27.1943 18.9201L32.4383 13.6761C30.1398 11.7951 27.2017 10.6666 24 10.6666C20.7982 10.6666 17.8601 11.7951 15.5616 13.6761Z" fill="#022C22"></path>
-                  <path d="M34.3239 15.5617L29.0799 20.8057C29.6628 21.7307 30 22.8259 30 24C30 25.174 29.6627 26.2693 29.0799 27.1943L34.3238 32.4383C36.2048 30.1398 37.3333 27.2017 37.3333 24C37.3333 20.7983 36.2048 17.8602 34.3239 15.5617Z" fill="#022C22"></path>
-                  <path d="M32.4382 34.3239L27.1942 29.0799C26.2693 29.6628 25.174 30 24 30C22.8259 30 21.7307 29.6628 20.8057 29.0799L15.5617 34.3239C17.8602 36.2048 20.7983 37.3333 24 37.3333C27.2016 37.3333 30.1397 36.2048 32.4382 34.3239Z" fill="#022C22"></path>
-                </svg>-->
               </div>
               <div>
-                <h5 class="text-xl font-medium mb-4">Ayudamos a que tu comunicación sea una herramienta que construya identidad, sentido y legitimidad.</h5>
+                <h5 class="text-lg text-black text-center">Ayudamos a que tu comunicación sea una herramienta que construya<br> identidad, sentido y legitimidad.</h5>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--
-      </section>
-      <section class="py-12 lg:py-24">
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap -mx-4 mb-24">
-            <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-              <div>
-                <h1 class="font-heading text-6xl">About us</h1>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 px-4">
-              <div class="lg:max-w-lg md:ml-auto">
-                <p class="text-xl font-medium mb-10">At Flora&Fauna, we're committed to a sustainable future. As a pioneering force in the green energy sector, we've been at the forefront of the transition to clean, renewable power sources. Our mission is simple yet profound: to create a world where energy is not only abundant but also environmentally responsible. We believe that by harnessing the power of nature, we can power the world and protect it simultaneously.</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 hover:text-lime-500 border border-lime-500 hover:border-teal-900 bg-lime-500 hover:bg-teal-900 rounded-full transition duration-300" href="#!">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex overflow-x-hidden">
-          <div class="w-1/3 lg:w-1/5 -ml-32 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-3xl" src="fauna-assets/about/about-image1.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-3xl" src="fauna-assets/about/about-image2.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-2xl" src="fauna-assets/about/about-image3.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-2xl" src="fauna-assets/about/about-image4.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-2xl" src="fauna-assets/about/about-image5.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-2xl" src="fauna-assets/about/about-image1.png" alt=""/></div>
-          <div class="w-1/3 lg:w-1/5 flex-shrink-0 px-2 md:px-4"><img class="block w-full h-full object-cover rounded-2xl" src="fauna-assets/about/about-image2.png" alt=""/></div>
-        </div>
-      </section>-->
       <section class="py-12 lg:pt-16 lg:pb-24 overflow-hidden">
         <div class="container mx-auto px-4">
           <div class="flex flex-wrap items-center -mx-4 mb-16">
@@ -236,158 +233,8 @@ Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde a
             </div>
             <div class="w-full lg:w-1/2 px-4"><img class="block" src="fauna-assets/career/team-members-photos.png" alt=""/></div>
           </div>
-          <!--<div class="flex flex-wrap items-center -mx-4 mb-16">
-            <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
-              <h3 class="text-3xl font-medium">Open positions</h3>
-            </div>
-            <div class="w-full lg:w-1/2 px-4">
-              <div class="sm:flex">
-                <div class="relative inline-block w-full max-w-xs mb-4 sm:mb-0 sm:mr-4 bg-white rounded-full"><span class="absolute top-1/2 right-0 mr-4 transform -translate-y-1/2">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.3999 8.2L9.9999 11.8L13.5999 8.2" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span>
-                  <select class="w-full px-4 py-3 font-medium border rounded-full appearance-none cursor-pointer outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 bg-transparent relative" name="" id="">
-                    <option value="1">All departments</option>
-                    <option value="2">Sales</option>
-                    <option value="3">Marketing</option>
-                  </select>
-                </div>
-                <div class="relative inline-block w-full max-w-xs bg-white rounded-full"><span class="absolute top-1/2 right-0 mr-4 transform -translate-y-1/2">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.3999 8.2L9.9999 11.8L13.5999 8.2" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span>
-                  <select class="w-full px-4 py-3 font-medium border rounded-full appearance-none cursor-pointer outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 bg-transparent relative" name="" id="">
-                    <option value="1">All locations</option>
-                    <option value="2">USA</option>
-                    <option value="3">Europe</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="mb-16"><span class="block font-medium text-gray-600 mb-6">Research and Development (R&D)</span>
-            <div class="py-6 px-8 mb-4 bg-white rounded-2xl shadow-md">
-              <div class="flex flex-col sm:flex-row md:justify-between items-start">
-                <div class="mb-6 sm:mb-0">
-                  <h4 class="text-xl font-medium mb-3">Renewable Energy Researcher</h4>
-                  <div class="inline-flex mr-8 items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">San Francisco, US</span>
-                  </div>
-                  <div class="inline-flex items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 5.5V10L13 11.5" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">Full-Time</span>
-                  </div>
-                </div><a class="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" href="#!"><span class="mr-1 font-medium">Apply</span>                                  <span class="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.25 6.25H13.75V13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
-            </div>
-            <div class="py-6 px-8 bg-white rounded-2xl shadow-md">
-              <div class="flex flex-col sm:flex-row md:justify-between items-start">
-                <div class="mb-6 sm:mb-0">
-                  <h4 class="text-xl font-medium mb-3">Materials Scientist</h4>
-                  <div class="inline-flex mr-8 items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">San Francisco, US</span>
-                  </div>
-                  <div class="inline-flex items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 5.5V10L13 11.5" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">Full-Time</span>
-                  </div>
-                </div><a class="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" href="#!"><span class="mr-1 font-medium">Apply</span>                                  <span class="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.25 6.25H13.75V13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
-            </div>
-          </div>
-          <div><span class="block font-medium text-gray-600 mb-6">Engineering</span>
-            <div class="py-6 px-8 mb-4 bg-white rounded-2xl shadow-md">
-              <div class="flex flex-col sm:flex-row md:justify-between items-start">
-                <div class="mb-6 sm:mb-0">
-                  <h4 class="text-xl font-medium mb-3">Renewable Energy Engineer</h4>
-                  <div class="inline-flex mr-8 items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">San Francisco, US</span>
-                  </div>
-                  <div class="inline-flex items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 5.5V10L13 11.5" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">Full-Time</span>
-                  </div>
-                </div><a class="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" href="#!"><span class="mr-1 font-medium">Apply</span>                                  <span class="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.25 6.25H13.75V13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
-            </div>
-            <div class="py-6 px-8 mb-4 bg-white rounded-2xl shadow-md">
-              <div class="flex flex-col sm:flex-row md:justify-between items-start">
-                <div class="mb-6 sm:mb-0">
-                  <h4 class="text-xl font-medium mb-3">Solar Engineer</h4>
-                  <div class="inline-flex mr-8 items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">San Francisco, US</span>
-                  </div>
-                  <div class="inline-flex items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 5.5V10L13 11.5" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">Full-Time</span>
-                  </div>
-                </div><a class="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" href="#!"><span class="mr-1 font-medium">Apply</span>                                  <span class="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.25 6.25H13.75V13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
-            </div>
-            <div class="py-6 px-8 bg-white rounded-2xl shadow-md">
-              <div class="flex flex-col sm:flex-row md:justify-between items-start">
-                <div class="mb-6 sm:mb-0">
-                  <h4 class="text-xl font-medium mb-3">Wind Energy Engineer</h4>
-                  <div class="inline-flex mr-8 items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.75 8.5C16.75 13.75 10 18.25 10 18.25C10 18.25 3.25 13.75 3.25 8.5C3.25 6.70979 3.96116 4.9929 5.22703 3.72703C6.4929 2.46116 8.20979 1.75 10 1.75C11.7902 1.75 13.5071 2.46116 14.773 3.72703C16.0388 4.9929 16.75 6.70979 16.75 8.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 10.75C11.2426 10.75 12.25 9.74264 12.25 8.5C12.25 7.25736 11.2426 6.25 10 6.25C8.75736 6.25 7.75 7.25736 7.75 8.5C7.75 9.74264 8.75736 10.75 10 10.75Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">San Francisco, US</span>
-                  </div>
-                  <div class="inline-flex items-center">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M10 5.5V10L13 11.5" stroke="#646A69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg><span class="ml-2 font-medium text-gray-900">Full-Time</span>
-                  </div>
-                </div><a class="inline-flex ml-auto group items-center text-lg text-black hover:text-lime-600 transition duration-100" href="#!"><span class="mr-1 font-medium">Apply</span>                                  <span class="transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-100">
-                    <svg width="20" height="20" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6.25 13.75L13.75 6.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M6.25 6.25H13.75V13.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></span></a>
-              </div>
-            </div>
-          </div>
-        </div>-->
       </section>
-
-      <!--PREFOOTER-->
+<!--PREFOOTER-->
           <section> 
             <div class="p-4">
               <div class="max-w-xl lg:max-w-5xl mx-auto xl:max-w-none px-5 md:px-12 xl:px-24 py-16 bg-teal-900 rounded-2xl">
@@ -398,7 +245,7 @@ Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde a
                         <h1 class="font-heading text-4xl xs:text-5xl sm:text-6xl tracking-sm text-white mb-6">Claridad para decidir. Criterio para priorizar. Confianza para avanzar.</h1>
                       </div>
                     </div>
-                    <div class="w-full lg:w-1/3 px-4 lg:text-right"><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a></div>
+                    <div class="w-full lg:w-1/3 px-4 lg:text-right"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a></div>
                   </div>
                 </div>
               </div>
@@ -444,7 +291,9 @@ Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde a
                 <h5 class="text-xl font-medium text-white mb-4">¿Querés saber si Capitana es lo que tu organización necesita?</h5>
                 <p class="text-sm text-white opacity-80 leading-normal mb-10">Antes de ofrecer respuestas, escuchamos. Agendá una entrevista inicial sin cargo para conversar sobre tu contexto, tus desafíos y tus prioridades.</p>
                 <div class="flex flex-col">
-                  <input class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" placeholder="e-mail..."/><a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Enviar</a>
+                  
+                  <input class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" placeholder="e-mail..."/>
+                  <a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-white border border-lime-500 hover:border-white bg-lime-500 hover:bg-white hover:text-black rounded-full transition duration-200" href="#!">Enviar</a>
                 </div>
               </div>
             </div>
@@ -467,6 +316,6 @@ Acompañamos a organizaciones en transformación, ayudándolas a ordenar desde a
           </div>
         </div>
       </section>
-    </div>
+    </div>      
   </body>
 </html>

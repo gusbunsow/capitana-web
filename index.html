@@ -1,15 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<html lang="en">
-  <head>
-    <title>Visit www.pixelrocket.store to learn how to become a frontend web developer</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/tailwind/tailwind.min.css"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer="defer"></script>
-  </head>
+  <!-- SEO Básico -->
+  <title>Capitana Marketing | Consultora</title>
+  <meta name="description" content="Capitana Marketing es una consultora estratégica en identidad y transformación digital. Acompañamos procesos complejos con sensibilidad, criterio y mirada estratégica." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Capitana Marketing" />
+  <meta name="language" content="Spanish" />
+  <meta name="geo.region" content="AR" />
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Capitana Marketing | Consultora de Marketing" />
+  <meta property="og:description" content="Sin fórmulas. Diseñamos estrategias con sentido desde el ADN único de cada organización." />
+  <meta property="og:image" content="https://capitana.com/social-preview.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://capitana.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Capitana Marketing | Consultora de Marketing" />
+  <meta name="twitter:description" content="Sin fórmulas. Diseñamos estrategias con sentido desde el ADN único de cada organización." />
+  <meta name="twitter:image" content="https://capitana.com/social-preview.jpg" />
+
+  <!-- Favicon (lo tenías) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+
+  <!-- Tus recursos originales (Tailwind, Google Fonts, Alpine) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tailwind/tailwind.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+
+  <!-- Google Analytics (reemplazá G-XXXXXXXX por tu ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXX');
+  </script>
+</head>
+<body>
+
   <body class="antialiased bg-body text-body font-body">
     <div>
         <section class="relative bg-teal-900" x-data="{ mobileNavOpen: false }"><img class="absolute top-0 left-0 w-full h-full" src="fauna-assets/headers/bg-waves.png" alt=""/>
@@ -21,7 +59,6 @@
                   <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#servicios">Servicios</a></li>
                   <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#testimonios">Testimonios</a></li>
                   <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="#Preguntas">Preguntas frecuentes</a></li>
-                  <li class="mr-8"><a class="inline-block text-white hover:text-lime-500 font-medium" href="">Contacto</a></li>
                 </ul>
                 <div class="flex items-center justify-end">
                   <div class="hidden md:block"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-sm font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200" href=""><span class="mr-2">Agendá un encuentro</span>
@@ -45,7 +82,7 @@
             <div class="w-full text-center">
               <h1 class="font-heading text-5xl xs:text-7xl xl:text-8xl tracking-tight text-white mb-8">Consultora estratégica en identidad<br>y transformación digital.</h1>
                 <p class="max-w-md xl:max-w-none text-lg text-white opacity-80 mb-10">Cuando una organización evoluciona, crece o simplemente cambia, su estrategia de comunicación también.<br>En un entorno digital saturado, no gana el que más ruido hace, sino el que tiene más claridad y conexión.
-                  <br>Ayudamos a alinear lo que son con lo que hacen, dicen y muestran.</p><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a>
+                  <br>Ayudamos a alinear lo que son con lo que hacen, dicen y muestran.</p><a class="group py-2.5 px-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a>
               </div>
             </div>
           </div>
@@ -203,30 +240,42 @@
   </div>
 </section>
 
-<section class="py-12 lg:py-24 overflow-hidden">
-  <div class="container mx-auto px-4">
-    <div class="w-full text-center">
-      <!-- Frase principal (similar al h5 de la sección blanca) -->
-      <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-6">
-        Todos nuestros servicios están pensados con escalabilidad inteligente: si empezás con un diagnóstico y decidís avanzar, solo abonás la diferencia. Tu inversión construye sobre lo ya trabajado.
-      </h5>
-      <!-- Bajada (similar al span de la sección blanca) -->
-      <p class="text-base lg:text-lg text-gray-700 mb-10">
-        No ofrecemos soluciones genéricas. Creamos estrategias con sentido, desde el contexto real de cada organización.
-      </p>
-      <!-- Botón (igual al que tenías, pero más proporcionado) -->
-      <a class="inline-flex py-3 px-6 items-center justify-center text-base font-medium text-white hover:text-teal-900 border border-teal-900 hover:border-lime-500 bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200" href="#!">Contactános</a>
-    </div>
-  </div>
-</section>
-          <div class="flex justify-center">
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
-            <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image2.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image3.png" alt=""/></div>
-            <div class="hidden md:block sm:flex-shrink-0 h-full max-w-md md:max-w-xl mr-4 sm:mr-8"><img class="block w-full" src="fauna-assets/about/about-image4.png" alt=""/></div>
+            <section class="py-12 lg:py-24 overflow-hidden">
+          <div class="container mx-auto px-4">
+            <div class="w-full text-center">
+              <!-- Frase principal (similar al h5 de la sección blanca) -->
+              <h5 class="text-2xl xs:text-3xl lg:text-4xl xl:text-5xl mb-6">
+                Todos nuestros servicios están pensados con escalabilidad inteligente: si empezás con un diagnóstico y decidís avanzar, solo abonás la diferencia. Tu inversión construye sobre lo ya trabajado.
+              </h5>
+              <!-- Bajada (similar al span de la sección blanca) -->
+              <p class="text-base lg:text-lg text-gray-700 mb-10">
+                No ofrecemos soluciones genéricas. Creamos estrategias con sentido, desde el contexto real de cada organización.
+              </p>
+              <!-- Botón (igual al que tenías, pero más proporcionado) -->
+              <a class="inline-flex py-3 px-6 items-center justify-center text-base font-medium text-white hover:text-teal-900 border-teal-900 hover:none bg-teal-900 hover:bg-lime-500 rounded-full transition duration-200" href="#!">Contactános</a>
+            </div>
           </div>
+        </section>
+                          <div class="flex justify-center">
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image1.png" alt=""/>
+                  </div>
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image2.png" alt=""/>
+                  </div>
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image3.png" alt=""/>
+                  </div>
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image4.png" alt=""/>
+                  </div>
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image5.png" alt=""/>
+                  </div>
+                  <div class="flex-shrink-0 h-full max-w-xs sm:max-w-md md:max-w-xl mr-4 sm:mr-8">
+                    <img class="block w-full" style="border-radius: 12px"; src="fauna-assets/about/about-image6.png" alt=""/>
+                  </div>
+                </div>
         </div>
       </section>
       <!--PREGUNTAS FRECUENTES-->
@@ -502,7 +551,7 @@
                         <h1 class="font-heading text-4xl xs:text-5xl sm:text-6xl tracking-sm text-white mb-6">Claridad para decidir. Criterio para priorizar. Confianza para avanzar.</h1>
                       </div>
                     </div>
-                    <div class="w-full lg:w-1/3 px-4 lg:text-right"><a class="inline-flex py-4 px-6 items-center justify-center text-lg font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a></div>
+                    <div class="w-full lg:w-1/3 px-4 lg:text-right"><a class="inline-flex group py-2.5 px-4 items-center justify-center text-lg font-medium text-white hover:text-teal-900 border border-white hover:bg-white rounded-full transition duration-200" href="#!">Contactános</a></div>
                   </div>
                 </div>
               </div>
@@ -548,7 +597,9 @@
                 <h5 class="text-xl font-medium text-white mb-4">¿Querés saber si Capitana es lo que tu organización necesita?</h5>
                 <p class="text-sm text-white opacity-80 leading-normal mb-10">Antes de ofrecer respuestas, escuchamos. Agendá una entrevista inicial sin cargo para conversar sobre tu contexto, tus desafíos y tus prioridades.</p>
                 <div class="flex flex-col">
-                  <input class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" placeholder="e-mail..."/><a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-teal-900 border border-lime-500 hover:border-white bg-lime-500 hover:bg-white rounded-full transition duration-200" href="#!">Enviar</a>
+                  
+                  <input class="h-12 w-full px-4 py-1 placeholder-gray-700 outline-none ring-offset-0 focus:ring-2 focus:ring-lime-500 shadow rounded-full" type="email" placeholder="e-mail..."/>
+                  <a class="h-12 inline-flex mt-3 py-1 px-5 items-center justify-center font-medium text-white border border-lime-500 hover:border-white bg-lime-500 hover:bg-white hover:text-black rounded-full transition duration-200" href="#!">Enviar</a>
                 </div>
               </div>
             </div>
