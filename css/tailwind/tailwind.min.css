@@ -811,6 +811,37 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255/var(--tw-bg-opacity))
 }
+/*VARIANTE BORDEAUX*/
+.bg-bordeaux {
+  background-color: #741012;
+}
+
+.btn-bordeaux {
+  background-color: #741012;
+  color: white;
+  border: 2px solid #741012;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-bordeaux:hover {
+  background-color: white;
+  color: #741012;
+  border-color: #741012;
+  /* Si querés outline en lugar de border, cambiá 'border' por 'outline' */
+}
+
+.hover\:text-bordeaux-500:hover {
+    --tw-text-opacity: 1;
+    color: #741012 
+}
+/* FIN VARIANTE BORDEAUX*/
 
 .object-cover {
     -o-object-fit: cover;
